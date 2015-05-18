@@ -1,0 +1,330 @@
+/*
+Theme Name:         Flying Cat Digital
+Description:        Personal Template
+Version:            1.0
+Author:             Alexandre Garnier
+*/
+
+@import "settings";
+//  @import "foundation";
+
+// Or selectively include components
+
+//  @import "foundation/components/accordion",
+//  @import "foundation/components/alert-boxes",
+  @import "foundation/components/block-grid";
+//  @import "foundation/components/breadcrumbs";
+//  @import "foundation/components/button-groups";
+  @import "foundation/components/buttons";
+  @import "foundation/components/clearing";
+//  @import "foundation/components/dropdown";
+//  @import "foundation/components/dropdown-buttons";
+//  @import "foundation/components/flex-video";
+  @import "foundation/components/forms";
+  @import "foundation/components/grid";
+  @import "foundation/components/inline-lists";
+//  @import "foundation/components/joyride";
+//  @import "foundation/components/keystrokes";
+//  @import "foundation/components/labels";
+//  @import "foundation/components/magellan";
+//  @import "foundation/components/orbit";
+//  @import "foundation/components/pagination";
+//  @import "foundation/components/panels";
+//  @import "foundation/components/pricing-tables";
+//  @import "foundation/components/progress-bars";
+  @import "foundation/components/reveal";
+//  @import "foundation/components/side-nav";
+//  @import "foundation/components/split-buttons";
+//  @import "foundation/components/sub-nav";
+//  @import "foundation/components/switches";
+//  @import "foundation/components/tables";
+//  @import "foundation/components/tabs";
+  @import "foundation/components/thumbs";
+//  @import "foundation/components/tooltips";
+  @import "foundation/components/top-bar";
+  @import "foundation/components/type";
+//  @import "foundation/components/offcanvas";
+  @import "foundation/components/visibility";
+
+.top-bar a:before{
+	content: '';
+	position: relative;
+	display: inline-block;
+	left: -10px; top: 5px;
+	width: 18px;
+	height: 18px;
+	background: url(../img/telmail.png) no-repeat;
+}
+
+a.tel:before{background-position: left center;}
+a.mail:before{background-position: right center;}
+
+#top-page{
+	background: url(../img/macbook-big.jpg) no-repeat fixed;
+	background-size: cover;
+	position: relative;
+	min-height: 500px;
+
+} 
+
+.titre{
+	height: 80px;
+	background-color: rgba(32,32,32,0.2);
+	position: relative;
+	top: 37px;
+
+	h1 a{
+		display: block;
+		height: 46px;
+		line-height: 46px;
+		width: 201px;
+		text-indent: 201px;
+		overflow: hidden;
+		background: url(../img/logo-fcd.png) no-repeat center;
+		position: absolute;
+		bottom: 15px; left: 115px;
+	}
+}
+
+.burger{
+	display: block;
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+	border: 2px solid rgb(255, 255, 255);
+	position: fixed;
+	top: 60px; left: 25px;
+	background: $primary-color url(../img/burger.png) center no-repeat;
+	transition: all 200ms ease-out;
+	z-index: 997;
+	&:hover{
+		cursor: pointer;
+		background-color: $grass;
+	}
+}
+
+#nav{
+	background-color: rgba(255,255,255,1);
+	position: fixed;
+	top: 145px;
+	left: 20px;
+	border: 1px solid $primary-color;
+	transform: translateX(-200px);
+	transition: all 200ms ease-out;
+	opacity: 0;
+	z-index: 997;
+	ul{margin-bottom: 0;}
+	li a{
+		display: block;
+		padding: 10px 20px;
+		color: $black;
+		&:hover{background-color: $primary-color; color: $white;}
+	}
+}
+.navOpen{
+	opacity: 1!important;
+	transform: translateX(0)!important;
+}
+
+.punchline{
+	position: absolute;
+	max-width: 600px;
+	top: 50%; right: 20px;
+	margin-left: 20px;
+	text-align: right;
+	color: $white;
+	p{
+		font-size: 2rem;
+		font-weight: 100;
+		line-height: normal;
+		text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+	}
+	.button{margin-top: 40px;}
+}
+
+#down{
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.visit{
+	color: $white;
+	margin-bottom: 0;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+}
+
+.cut{margin-bottom: 60px;margin-top: 60px;}
+.firstcut{margin-top: 0;}
+
+h2{
+	background-color: $primary-color;
+	@extend .text-center;
+	height: 80px;
+	line-height: 80px;
+	font-weight: 100;
+	color: $white;
+	margin: 0;
+}
+
+.comp{
+	@extend .row;
+	@extend .text-center;
+	@extend .large-text-left;
+	img{
+		border-radius: 50%;
+	}
+	p{
+		font-size: 1.5rem;
+		font-weight: 100;
+	}
+	&:not(:last-child):after{
+		content: "+";
+		font-size: 10rem;
+		line-height: 10rem;
+		font-weight: 100;
+		color: $cactus;
+		display: block;
+		text-align: center;
+	}
+}
+
+.cite{
+	position: relative;
+	p{
+		color: $primary-color;
+		padding: 25px 50px;
+		font-weight: 700;
+		//background-color: $cactus;
+	}
+}
+
+.projet{
+	@extend .row;
+	@extend .text-center;
+	@extend .medium-text-left; 
+	padding-top: 40px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	h3{
+		font-weight: 100;
+	}
+	img{
+		//display: inline;
+		margin-right: 10px;
+	}
+}
+.site-btn{
+	transition: opacity 200ms ease-out;
+	&:hover{
+		opacity: 0.7;
+	}
+}
+.desc{
+	padding-left: 20px;
+	padding-right: 20px;
+	li{
+		line-height: 2.5rem;
+		img{display: inline-block;}
+	}
+}
+.gallery{
+	padding: 50px;
+	a {
+		position: relative;
+		transition: opacity 300ms ease-out;
+		&:hover{opacity:0.3}
+	}
+}
+
+.citeVal p{
+	color: $primary-color;
+	font-size: 1.1rem;
+	font-weight: 700;
+	padding: 0 20px 20px 20px;
+}
+.wam{
+	margin-bottom: 50px;
+}
+img[alt="Photo"]{
+	border-radius: 50%;
+}
+.link{
+	padding: 10px;
+}
+div[role="form"] input{
+	box-shadow: none;
+}
+.wpcf7-submit{
+	@extend .button;
+	@extend .large;
+}
+.wpcf7-response-output{clear: both;}
+
+footer{
+	@extend .text-center;
+	padding: 30px;
+	border-top: 1px solid #ccc;
+}
+
+.ios-bg-fix{
+	background-attachment: scroll!important;
+	background-position: center!important;
+}
+
+@media #{$medium-up} {
+	.punchline {
+		right: 60px;
+		p{
+			font-size: 4rem;
+			//line-height: normal;
+			}
+	}
+}
+
+@media #{$small-only} {
+	.titre {
+		height: 70px;
+		h1 a{
+			left: initial;
+			right: 20px;
+			bottom: 12px;
+			background-image: url(../img/logo-fcd@2x.png);
+			background-size: 201px 46px;
+		}
+	}
+	#top-page{background-image: url(../img/macbook-med.jpg);}
+	.top-bar a:before{
+		background-image: url(../img/telmail@2x.png);
+		background-size: 36px 18px;
+	}
+	#down img{width: 50px;}
+	.burger{
+		top: 55px;
+		left: 10px;
+		background-image: url(../img/burger@2x.png);
+		background-size: 24px 22px;
+	}
+	#nav{top: 125px;right: 10px;left: 10px;transform: translateX(-620px);}
+	.punchline{text-align: center;}
+	.cite p{
+		padding: 0 10px;
+		font-weight: 300;
+		font-size: 1.1rem;
+	}
+	p.detailComp{
+		font-size: 1.1rem;
+	}
+	#realisations .cut{
+		margin-bottom: 0;
+	}
+	.projet{
+		margin-top: 0;
+		background-color: #fff!important;
+		border-top: 1px solid $cactus;
+	}
+	.desc li{width: 100%;margin: 0}
+	#valeurs .cut{margin-top: 0;}
+	.formSubmit{text-align: center;}
+}
