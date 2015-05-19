@@ -21,19 +21,24 @@ Template Name: Accueil
 				</div>
 				<h1><a href="#">Flying Cat Digital</a></h1>
 			</header><!-- /header -->
-			<div class="punchline">
-				<p><?php the_field('punchline')?></p>
-				<a href="#" class="button large" data-reveal-id="questionnaire">Obtenir un devis en ligne</a>
-				<div id="questionnaire" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+			<div class="punchline row">
+				<p class="small-12 small-centered columns"><?php the_field('punchline')?></p>
+				<div class="large-6 columns">
+					<a href="#competences" class="button large small-12 radius scrollTo">Démarrer la visite</a>
+				</div>
+				<div class="large-6 columns">
+					<a href="#" class="devis small-12" data-reveal-id="questionnaire">Obtenir un devis</a>
+				</div>
+					<div id="questionnaire" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
 					<h3 id="modalTitle">Décrivez votre projet</h3>
 					<?php the_field('questionnaire') ?>
 					<a class="close-reveal-modal" aria-label="Close">&#215;</a>
 				</div>
 			</div>
-			<a id="down" href="#competences" class="scrollTo">
+			<!--<a id="down" href="#competences" class="scrollTo">
 				<p class="visit">Démarrer la visite</p>
 				<img src="<?php bloginfo('template_url') ?>/dist/assets/img/down.png" alt="" width="90" height="90">
-			</a>
+			</a>-->
 		</section>
 
 		<!-- COMPETENCES -->

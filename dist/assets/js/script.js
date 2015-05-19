@@ -1920,9 +1920,9 @@ window.onresize = resizeTop();
 function resizeTop(){
 	vph = $(window).height();
 	$('#top-page').css({'height': vph + 'px'});
-	punchH = $('.punchline').height()/2-topSpace;
+	/*punchH = $('.punchline').height()/2-topSpace;
 	console.log(punchH);
-	$('.punchline').css({'margin-top': '-' + punchH + 'px'});
+	$('.punchline').css({'margin-top': '-' + punchH + 'px'});*/
 	console.log('ok resize');
 }
 

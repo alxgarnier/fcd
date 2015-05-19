@@ -69,7 +69,6 @@ a.mail:before{background-position: right center;}
 
 .titre{
 	height: 80px;
-	background-color: rgba(32,32,32,0.2);
 	position: relative;
 	top: 37px;
 
@@ -127,19 +126,24 @@ a.mail:before{background-position: right center;}
 }
 
 .punchline{
-	position: absolute;
-	max-width: 600px;
-	top: 50%; right: 20px;
-	margin-left: 20px;
-	text-align: right;
-	color: $white;
+	text-align: center;
+	padding-top: 30px;
 	p{
+		color: $black;
 		font-size: 2rem;
 		font-weight: 100;
 		line-height: normal;
+		color: $white;
 		text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+		margin-bottom: 30px;
 	}
-	.button{margin-top: 40px;}
+}
+
+.devis{
+	@extend .button;
+	@extend .large;
+	@extend .radius;
+	background-color: #1E6FBE;
 }
 
 #down{
@@ -276,9 +280,14 @@ footer{
 @media #{$medium-up} {
 	.punchline {
 		right: 60px;
+		margin-top: 150px;
+		max-width: 600px;
+		border-radius: 3px;
+		background-color: rgba(256,256,256,0.5);
 		p{
-			font-size: 4rem;
-			//line-height: normal;
+			text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+			font-weight: 700;
+			color: $white;
 			}
 	}
 }
@@ -286,6 +295,7 @@ footer{
 @media #{$small-only} {
 	.titre {
 		height: 70px;
+		background-color: rgba(32,32,32,0.2);
 		h1 a{
 			left: initial;
 			right: 20px;
@@ -294,7 +304,7 @@ footer{
 			background-size: 201px 46px;
 		}
 	}
-	#top-page{background-image: url(../img/macbook-med.jpg);}
+	#top-page{background-image: url(../img/macbook-sma.jpg);}
 	.top-bar a:before{
 		background-image: url(../img/telmail@2x.png);
 		background-size: 36px 18px;
@@ -307,7 +317,10 @@ footer{
 		background-size: 24px 22px;
 	}
 	#nav{top: 125px;right: 10px;left: 10px;transform: translateX(-620px);}
-	.punchline{text-align: center;}
+	.punchline{
+		position: absolute;
+		top: 150px; bottom: 70px;
+	}
 	.cite p{
 		padding: 0 10px;
 		font-weight: 300;

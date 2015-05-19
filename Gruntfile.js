@@ -82,8 +82,8 @@ cssmin: {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // Définition des tâches Grunt
-  grunt.registerTask('buildJs',  ['concat', 'uglify']);
+  grunt.registerTask('js',  ['concat', 'uglify']);
   grunt.registerTask('css',  ['autoprefixer', 'cssmin']);
-  grunt.registerTask('default', ['buildJs', 'css'])
+  grunt.registerTask('default', ['js', 'css'])
 
 }
