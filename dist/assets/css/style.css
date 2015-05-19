@@ -75,6 +75,7 @@ html, body {
 
 /* line 425, ../../../bower_components/foundation/scss/foundation/components/_global.scss */
 html {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -82,7 +83,6 @@ html {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
@@ -1068,9 +1068,7 @@ button::-moz-focus-inner {
   left: 50%;
   top: 50%;
   -webkit-transform: translateY(-50%) translateX(-50%);
-  -moz-transform: translateY(-50%) translateX(-50%);
   -ms-transform: translateY(-50%) translateX(-50%);
-  -o-transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%);
   max-height: 100%;
   max-width: 100%;
@@ -1441,13 +1439,8 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   margin: 0 0 1rem 0;
   padding: 0.5rem;
   width: 100%;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: border-color 0.15s linear, background 0.15s linear;
-  -moz-transition: border-color 0.15s linear, background 0.15s linear;
-  -ms-transition: border-color 0.15s linear, background 0.15s linear;
-  -o-transition: border-color 0.15s linear, background 0.15s linear;
   transition: border-color 0.15s linear, background 0.15s linear;
 }
 /* line 138, ../../../bower_components/foundation/scss/foundation/components/_forms.scss */
@@ -5734,6 +5727,8 @@ a.mail:before {
   top: 145px;
   left: 20px;
   border: 1px solid #55b621;
+  -webkit-transform: translateX(-200px);
+  -ms-transform: translateX(-200px);
   transform: translateX(-200px);
   transition: all 200ms ease-out;
   opacity: 0;
@@ -5758,6 +5753,8 @@ a.mail:before {
 /* line 123, ../../../scss/style.scss */
 .navOpen {
   opacity: 1 !important;
+  -webkit-transform: translateX(0) !important;
+  -ms-transform: translateX(0) !important;
   transform: translateX(0) !important;
 }
 
@@ -6007,6 +6004,8 @@ footer {
     top: 125px;
     right: 10px;
     left: 10px;
+    -webkit-transform: translateX(-620px);
+    -ms-transform: translateX(-620px);
     transform: translateX(-620px);
   }
 
