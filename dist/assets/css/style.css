@@ -5947,12 +5947,11 @@ footer {
 @media only screen and (min-width: 40.0625em) {
   /* line 281, ../../../scss/style.scss */
   .punchline {
-    right: 60px;
-    margin-top: 150px;
+    margin-top: 15%;
     max-width: 600px;
     border-radius: 3px;
   }
-  /* line 287, ../../../scss/style.scss */
+  /* line 286, ../../../scss/style.scss */
   .punchline p {
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
     font-weight: 700;
@@ -5960,12 +5959,12 @@ footer {
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 296, ../../../scss/style.scss */
+  /* line 295, ../../../scss/style.scss */
   .titre {
     height: 70px;
     background-color: rgba(32, 32, 32, 0.2);
   }
-  /* line 299, ../../../scss/style.scss */
+  /* line 298, ../../../scss/style.scss */
   .titre h1 a {
     left: initial;
     right: 20px;
@@ -5974,23 +5973,23 @@ footer {
     background-size: 201px 46px;
   }
 
-  /* line 307, ../../../scss/style.scss */
+  /* line 306, ../../../scss/style.scss */
   #top-page {
     background-image: url(../img/macbook-sma.jpg);
   }
 
-  /* line 308, ../../../scss/style.scss */
+  /* line 307, ../../../scss/style.scss */
   .top-bar a:before {
     background-image: url(../img/telmail@2x.png);
     background-size: 36px 18px;
   }
 
-  /* line 312, ../../../scss/style.scss */
+  /* line 311, ../../../scss/style.scss */
   #down img {
     width: 50px;
   }
 
-  /* line 313, ../../../scss/style.scss */
+  /* line 312, ../../../scss/style.scss */
   .burger {
     top: 55px;
     left: 10px;
@@ -5998,7 +5997,7 @@ footer {
     background-size: 24px 22px;
   }
 
-  /* line 319, ../../../scss/style.scss */
+  /* line 318, ../../../scss/style.scss */
   #nav {
     top: 125px;
     right: 10px;
@@ -6008,49 +6007,49 @@ footer {
     transform: translateX(-620px);
   }
 
-  /* line 320, ../../../scss/style.scss */
+  /* line 319, ../../../scss/style.scss */
   .punchline {
     position: absolute;
     top: 150px;
     bottom: 70px;
   }
 
-  /* line 324, ../../../scss/style.scss */
+  /* line 323, ../../../scss/style.scss */
   .cite p {
     padding: 0 10px;
     font-weight: 300;
     font-size: 1.1rem;
   }
 
-  /* line 329, ../../../scss/style.scss */
+  /* line 328, ../../../scss/style.scss */
   p.detailComp {
     font-size: 1.1rem;
   }
 
-  /* line 332, ../../../scss/style.scss */
+  /* line 331, ../../../scss/style.scss */
   #realisations .cut {
     margin-bottom: 0;
   }
 
-  /* line 335, ../../../scss/style.scss */
+  /* line 334, ../../../scss/style.scss */
   .projet {
     margin-top: 0;
     background-color: #fff !important;
     border-top: 1px solid #b7e98a;
   }
 
-  /* line 340, ../../../scss/style.scss */
+  /* line 339, ../../../scss/style.scss */
   .desc li {
     width: 100%;
     margin: 0;
   }
 
-  /* line 341, ../../../scss/style.scss */
+  /* line 340, ../../../scss/style.scss */
   #valeurs .cut {
     margin-top: 0;
   }
 
-  /* line 342, ../../../scss/style.scss */
+  /* line 341, ../../../scss/style.scss */
   .formSubmit {
     text-align: center;
   }
